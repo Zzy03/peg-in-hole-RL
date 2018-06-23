@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+
+  <param name="hole" command="$(find xacro)/xacro '$(find ur_description)/urdf/hole.urdf'" />
+
+</launch>

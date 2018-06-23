@@ -1,0 +1,2 @@
+set(arbotix_msgs_MESSAGE_FILES "/home/wzc/cat_ws/src/arbotix_ros-indigo-devel/arbotix_msgs/msg/Analog.msg;/home/wzc/cat_ws/src/arbotix_ros-indigo-devel/arbotix_msgs/msg/Digital.msg")
+set(arbotix_msgs_SERVICE_FILES "/home/wzc/cat_ws/src/arbotix_ros-indigo-devel/arbotix_msgs/srv/Enable.srv;/home/wzc/cat_ws/src/arbotix_ros-indigo-devel/arbotix_msgs/srv/Relax.srv;/home/wzc/cat_ws/src/arbotix_ros-indigo-devel/arbotix_msgs/srv/SetupChannel.srv;/home/wzc/cat_ws/src/arbotix_ros-indigo-devel/arbotix_msgs/srv/SetSpeed.srv")

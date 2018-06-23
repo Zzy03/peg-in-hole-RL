@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro" 
+       name="arm">
+
+  <!-- common stuff -->
+  <xacro:include filename="$(find ur_description)/urdf/common.gazebo.xacro" />
+  <!-- ur5 -->
+  <xacro:include filename="$(find ur_description)/urdf/ur5.urdf.xacro"/>
+  <!-- arm -->
+  <xacro:ur5_robot prefix="" joint_limited="true"/>
+
+  <link name="world" />
+
+  <joint name="world_joint" type="fixed">
+    <parent link="world" />
+    <child link = "base_link" />
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+  </joint>
+
+  <!-- ft -->
+  <xacro:include filename="$(find ur_description)/urdf/mini58.urdf.xacro"/>
+
+  <xacro:ati_mini58 name="fts" parent="ee_link">
+    <origin xyz="0 0 0" rpy="0.0 ${pi / 2.0} 0.0"/>
+  </xacro:ati_mini58>
+
+</robot>
+  

@@ -1,0 +1,8 @@
+prefix=/home/wzc/cat_ws/install
+
+Name: ur5_gripper_moveit_config
+Description: Description of ur5_gripper_moveit_config
+Version: 0.3.0
+Cflags: 
+Libs: -L/home/wzc/cat_ws/install/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/wzc/cat_ws/devel
+
+Name: ur_moveit_planner
+Description: Description of ur_moveit_planner
+Version: 0.0.0
+Cflags: -I/home/wzc/cat_ws/devel/include
+Libs: -L/home/wzc/cat_ws/devel/lib 
+Requires: geometry_msgs roscpp rospy std_msgs moveit_msgs

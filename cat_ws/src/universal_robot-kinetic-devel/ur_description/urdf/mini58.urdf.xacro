@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro"  name="ati_mini58">
+
+    <xacro:macro name="ati_mini58" params="parent name *origin">
+
+<!--         Shift for -30 -90 -->
+
+        <joint name="${name}_base_joint" type="fixed">
+            <xacro:insert_block name="origin" />
+            <parent link="${parent}"/>
+            <child link="${name}_base_link" />
+	    <dynamics damping="0.0" friction="0.0"/>
+        </joint>
+
+        <link name="${name}_base_link">
+            <inertial>
+                <mass value="0.01" />
+                <origin xyz="0 0 0" />
+                <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001" />
+            </inertial>
+            <visual>
+                <origin xyz="0 0 0.03" rpy="0 0 0" />
+                <geometry>
+                    <mesh filename="package://ur_description/meshes/ur5/visual/mini58.dae" />
+                </geometry>
+            </visual>
+            <collision>
+                <origin xyz="0 0 0" rpy="0 0 0" />
+                <geometry>
+                    <mesh filename="package://ur_description/meshes/ur5/collition/mini58.stl" scale="0.001 0.001 0.001" />
+                </geometry>
+            </collision>
+        </link>
+
+
+  </xacro:macro>
+
+</robot>
+

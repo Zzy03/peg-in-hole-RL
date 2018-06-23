@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/wzc/cat_ws/src/universal_robot-kinetic-devel/ur_kin_py/src/ur_kin_py.cpp
+boost/numpy.hpp
+-
+boost/scoped_array.hpp
+-
+ur_kinematics/ur_kin.h
+-
+
+/home/wzc/cat_ws/src/universal_robot-kinetic-devel/ur_kinematics/include/ur_kinematics/ur_kin.h
+

@@ -1,0 +1,22 @@
+port: /dev/ttyUSB0
+baud: 115200 #1000000
+rate: 20     #100
+sync_write: True
+sync_read: True   #False
+read_rate: 20    #10
+write_rate: 20   #10
+
+joints: {
+    shoulder_pan_joint: {id: 1, neutral: 512,},
+    shoulder_lift_joint: {id: 2, neutral: 512},
+    elbow_joint: {id: 3, neutral: 512},
+    wrist_1_joint: {id: 4, neutral: 512},
+    wrist_2_joint: {id: 5, neutral: 512},
+    wrist_3_joint: {id: 6,neutral: 512}
+}
+#http://wiki.ros.org/arbotix_python
+
+controllers: {
+   arm_controller: {action_name: follow_joint_trajectory, type: follow_controller, joints: [shoulder_pan_joint, shoulder_lift_joint, 
+   elbow_joint, wrist_1_joint, wrist_2_joint, wrist_3_joint] },  
+}

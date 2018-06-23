@@ -1,0 +1,8 @@
+prefix=/home/wzc/cat_ws/install
+
+Name: ur_gripper_description
+Description: Description of ur_gripper_description
+Version: 1.1.6
+Cflags: 
+Libs: -L/home/wzc/cat_ws/install/lib 
+Requires: 

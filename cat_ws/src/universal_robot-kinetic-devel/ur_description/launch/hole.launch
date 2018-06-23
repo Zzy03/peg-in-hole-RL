@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- Load the URDF into the ROS Parameter Server -->
+  <param name="hole"
+         command="$(find xacro)/xacro '$(find ur_description)/urdf/hole_world.urdf.xacro'" />
+ 
+  <!-- Run a python script to the send a service call to gazebo_ros to spawn a URDF robot -->
+   <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+        args="-urdf -model hole -param hole -z 0.05"/>
+
+</launch>

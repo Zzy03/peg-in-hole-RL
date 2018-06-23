@@ -1,0 +1,8 @@
+prefix=/home/wzc/cat_ws/install
+
+Name: manipulation_bringup
+Description: Description of manipulation_bringup
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/wzc/cat_ws/install/lib 
+Requires: 

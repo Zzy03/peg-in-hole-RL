@@ -1,0 +1,20 @@
+<launch>  
+  
+  
+   <!-- JointStateController and robot state publisher -->  
+  <include file="$(find ur5_dynamixels)/launch/ur5_joint_states.launch" /> 
+
+  <!-- load urdf and arbotix  -->  
+  <include file="$(find ur5_dynamixels)/launch/pedestal_ur5.launch" />     
+  
+  <include file="$(find ur5_dynamixels)/launch/ur5_trajectory_controller.launch" />  
+   
+  
+  <include file="$(find ur5_dynamixels)/launch/ur5_controller_manager.launch" />
+  
+  <include file="$(find ur5_moveit_config)/launch/trajectory_execution.launch.xml" />
+  
+   
+  <include file="$(find ur5_moveit_config)/launch/ur5_moveit_planning_execution.launch"/>
+  <!---->
+</launch>

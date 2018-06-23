@@ -1,0 +1,8 @@
+prefix=/home/wzc/cat_ws/install
+
+Name: boost_numpy
+Description: Description of boost_numpy
+Version: 1.1.102
+Cflags: -I/home/wzc/cat_ws/install/include
+Libs: -L/home/wzc/cat_ws/install/lib -lboost_numpy
+Requires: 

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" 
+       name="peg">
+
+  <!-- peg -->
+  <xacro:include filename="$(find ur_description)/urdf/peg.urdf.xacro"/> 
+  <xacro:include filename="$(find ur_description)/urdf/ur5_joint_limited_robot.urdf.xacro"/>
+  
+  
+  <joint name="peg_joint" type="fixed">
+    <parent link="wrist_3_link" />
+    <child link = "base_peg" />
+    <origin xyz="0.025 0 0" rpy="0 ${pi/2}  0" />
+    <dynamics damping="0.0" friction="0.0"/>
+  </joint>
+<!--
+  <link name="world" />
+  <joint name="world_joint" type="fixed">
+    <parent link="world" />
+    <child link = "base_peg" />
+    <origin xyz="0.0 1 0.1" rpy="${pi/2} 0 0" />
+  </joint>
+-->
+ 
+</robot>

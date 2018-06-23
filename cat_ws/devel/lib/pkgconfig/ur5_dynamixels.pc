@@ -1,0 +1,8 @@
+prefix=/home/wzc/cat_ws/devel
+
+Name: ur5_dynamixels
+Description: Description of ur5_dynamixels
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/wzc/cat_ws/devel/lib 
+Requires: 

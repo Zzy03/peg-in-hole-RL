@@ -1,0 +1,8 @@
+prefix=/home/wzc/cat_ws/devel
+
+Name: peg_hole_replay
+Description: Description of peg_hole_replay
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/wzc/cat_ws/devel/lib 
+Requires: 

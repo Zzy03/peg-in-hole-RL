@@ -1,0 +1,8 @@
+<launch>
+
+	<rosparam file="$(find ur5_dynamixels)/config/ur5_trajectory_control.yaml" command="load"/>
+
+  <node name="ur5_trajectory_controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+    output="screen" ns="/arm_controller" args="ur5"/>
+
+</launch>

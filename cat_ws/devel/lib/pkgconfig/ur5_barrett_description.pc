@@ -1,0 +1,8 @@
+prefix=/home/wzc/cat_ws/devel
+
+Name: ur5_barrett_description
+Description: Description of ur5_barrett_description
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/wzc/cat_ws/devel/lib 
+Requires: 
